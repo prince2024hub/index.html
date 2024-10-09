@@ -1,0 +1,143 @@
+<!doctype>
+<html>
+<head>
+<h3 style="padding:10px;"> <a href="practice work .html"> Back </a> </h3>
+
+<h1> <i> <font color="#00FFF">  <div style=text-align:center;> Form  </font color> </i> </h1>
+
+</head>
+<title> Form          </title>
+<body>
+      <body style="background:black">
+   <div id="main">
+        <form action="http://ipl/user/get.ipl" method="get">
+            <table>
+                <caption>User Login Form</caption>
+                <tr>
+                    <td><label for="username">User Name</label></td>
+                    <td><input type="text" id="username" name="username" placeholder="Type Name Here" required title="Type User Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password" name="password" placeholder="Type Password Here" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Login">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+<style>
+     {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #main {
+            width: 50%;
+            max-width: 600px;
+            margin: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: middle;
+        }
+
+        label {
+            font-size: 1em;
+            color: #333;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        input[type="reset"] {
+            background-color: #dc3545;
+            margin-left: 10px;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #c82333;
+        }
+
+        input:valid {
+            border-color: #28a745;
+        }
+
+        input:invalid {
+            border-color: #dc3545;
+        }
+
+        input:required ~ label::after {
+            content: " (required)";
+            font-size: 0.8em;
+            color: #dc3545;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+</style>
+</html>
